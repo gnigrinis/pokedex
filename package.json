@@ -1,0 +1,14 @@
+{
+  "name": "pokedex_typescript",
+  "version": "1.0.0",
+  "description": "Pokedex with TypeScript",
+  "main": "pokedex.js",
+  "scripts": {
+    "start": "http-server -p 8080"
+  },
+  "author": "Giancarlo Nigrinis",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}
