@@ -22,12 +22,12 @@ buscar.addEventListener("click", ()=>{
 
 const obtenerPokemon = async (nombrePokemon: HTMLInputElement, resultado: HTMLInputElement, contenedor: HTMLInputElement) => {
   const url:string = `https://pokeapi.co/api/v2/pokemon/${nombrePokemon.value.toLowerCase()}`
-  const requerimiento:any = await fetch(url)
+  const requerimiento = await fetch(url)
 
 
   //Validando si el pokemon existe
   if(requerimiento.status === 200){
-    const pokemon:any = await requerimiento.json()
+    const pokemon = await requerimiento.json()
 
     //Mostrando el pokemon
     const id = pokemon.id
